@@ -1,4 +1,4 @@
-package com.joker.salvo.net;
+package com.joker.salvo.net.request;
 
 import com.joker.salvo.net.intf.Request;
 

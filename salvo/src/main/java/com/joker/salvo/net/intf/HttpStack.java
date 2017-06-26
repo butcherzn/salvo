@@ -1,5 +1,10 @@
 package com.joker.salvo.net.intf;
 
+import com.joker.salvo.net.error.SalvoError;
+import com.joker.salvo.net.response.HttpResponse;
+
+import java.util.Map;
+
 /**
  * Http
  *
@@ -7,4 +12,16 @@ package com.joker.salvo.net.intf;
  */
 
 public interface HttpStack {
+
+
+    /**
+     *
+     * @param request
+     * @param additionalHeaders
+     * @return
+     * @throws SalvoError
+     */
+    HttpResponse performRequest(Request<?> request, Map<String, String> additionalHeaders) throws SalvoError;
+
+
 }

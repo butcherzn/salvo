@@ -1,4 +1,4 @@
-package com.joker.salvo.net;
+package com.joker.salvo.net.request;
 
 /**
  * Created by joker on 2017/6/23.

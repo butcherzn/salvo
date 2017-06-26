@@ -39,6 +39,15 @@ public interface Request<T> extends Comparable<Request<T>> {
      *
      *
      * </p>
+     */
+    void cancel();
+
+
+    /**
+     * <p>
+     *
+     *
+     * </p>
      * @return
      */
     boolean isCanceled();
@@ -65,7 +74,15 @@ public interface Request<T> extends Comparable<Request<T>> {
     Object getTag();
 
 
-    
+    /**
+     *
+     * @param tag
+     */
+    void finish(Object tag);
+
+
+
+
 
 
 }

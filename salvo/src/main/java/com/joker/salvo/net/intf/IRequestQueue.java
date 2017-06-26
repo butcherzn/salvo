@@ -19,6 +19,14 @@ public interface IRequestQueue {
     boolean stop();
 
 
+    /**
+     *
+     * @param request
+     * @return
+     */
+    boolean addRequest(Request<?> request);
+
+
 
 
 }
